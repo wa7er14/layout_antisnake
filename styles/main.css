@@ -1,4 +1,43 @@
 body {
   margin: 0; }
 
+.snake {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, auto)); }
+  @media (max-width: 900px) {
+    .snake {
+      grid-template-columns: repeat(auto-fill, minmax(300px, auto)); } }
+  .snake__item {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    color: white; }
+
+.snake__item:nth-child(1) {
+  background-color: red; }
+
+.snake__item:nth-child(2) {
+  background-color: #cc0000; }
+
+.snake__item:nth-child(3) {
+  background-color: #990000; }
+
+.snake__item:nth-child(4) {
+  background-color: #660000; }
+
+.snake__item:nth-child(5) {
+  background-color: #330000; }
+
+.snake__item:nth-child(6) {
+  background-color: black; }
+
 /*# sourceMappingURL=main.css.map */
